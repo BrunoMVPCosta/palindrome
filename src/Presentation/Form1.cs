@@ -38,8 +38,10 @@ namespace Presentation
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
+            int timesToRun = Convert.ToInt32(numTimesToRun.Value);
+
             bool result = false;
-            for (int i = 0; i <= 10000; i++)
+            for (int i = 0; i <= timesToRun; i++)
             {
                 result = validator.IsValid(txtWord.Text);
             }
